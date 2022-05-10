@@ -1,8 +1,8 @@
-## Python Object-Oriented Programming challenge.
+# Python Object-Oriented Programming challenge.
 
-# In the "SOLUÇÃO" folder there's the teachers soluction the following challenge:
+## In the "SOLUÇÃO" folder there's the teachers soluction the following challenge:
 
-# Tips:
+## Tips:
 
 - Create Customer class that inherits from the Person class (Inheritance) Person has name and age (with getters) Customer TEM account (Aggregation of the class ContaCorrente or ContaPoupanca) 
 
