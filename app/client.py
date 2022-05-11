@@ -1,6 +1,3 @@
-from account import *
-
-
 class Person():
     def __init__(self, name, age):
         self._name = name
@@ -16,6 +13,9 @@ class Person():
 
 
 class Client(Person):
-    def __init__(self, name, age, account):
+    def __init__(self, name, age):
         super().__init__(name, age)
-        self._account = account
+        self.account = None
+
+    def insert_account(self, account):
+        self.account = account

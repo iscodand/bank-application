@@ -1,6 +1,3 @@
-from client import *
-
-
 class Account():
     def __init__(self, agency, account_number, balance):
         self.agency = agency
@@ -19,11 +16,14 @@ class Account():
         if (self.__withdraw_disponible(value)):
             self._balance -= value
         else:
-            print('Saldo/Limite Indisponível!')
+            print('Saldo/Limite Insuficiente!')
 
     def transfer_money(self, value, destiny_account):
-        
-        destiny_account.deposit_money(value)
+        if (self.__withdraw_disponible(value)):
+            self.withdraw_money(value)
+            destiny_account.deposit_money(value)
+        else:
+            print('Transação não aceita!')
 
     @property
     def account_number(self):
@@ -41,21 +41,9 @@ class Account():
 class SavingsAccount(Account):
     def __init__(self, agency, account_number, balance):
         super().__init__(agency, account_number, balance)
-        self
 
 
 class CheckingAccount(Account):
     def __init__(self, agency, account_number, balance):
         super().__init__(agency, account_number, balance)
         self._limit += 500
-
-
-##### TEST ZONE #####
-
-conta1 = SavingsAccount('BB', 123, 500.0)
-conta2 = CheckingAccount('BB', 123, 250.0)
-
-conta2.transfer_money(2000.0, conta1)
-
-print(conta1.balance)
-
