@@ -4,8 +4,14 @@
 
 <h5 align="center"> :construction: Projeto em Construção :construction: </h5>
 
-<h2 align="center"> ✔️ Técnicas e tecnologias utilizadas ✔️ </h2>
+<h3> ✔️ Técnicas e tecnologias utilizadas ✔️ </h3>
 
-- ``Python 3.10``
+- ``Python 3.10.4``
 - ``Visual Studio Code``
 - ``Paradigma de Orientação a Objetos``
+
+<h3> 🎇 Sobre 🎇 </h3>
+
+- ``Agradecimentos: Obrigado por ler até aqui! Sou grato.``
+- ``Made by: Isco D'Andrade.`` 
+- ``Licença: MIT License``
