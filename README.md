@@ -1,8 +1,10 @@
-# Python Object-Oriented Programming challenge.
+<h1 align="center"> Python Object-Oriented Programming Challenge </h1>
 
-## Tips:
+<h5 align="center"> Exercise with Abstraction, Inheritance, Encapsulation and Polymorphism. Create a banking system (extremely simple) that has customers, accounts and a bank. The idea is that the customer has an account (savings or checking) and that can withdraw / deposit into that account. Checking accounts have an extra limit. Bank has customers and accounts. </h5>
 
-- Exercise with Abstraction, Inheritance, Encapsulation and Polymorphism. Create a banking system (extremely simple) that has customers, accounts and a bank. The idea is that the customer has an account (savings or checking) and that can withdraw / deposit into that account. Checking accounts have an extra limit. Bank has customers and accounts.
+<h5 align="center"> :construction: In Construction :construction: </h5>
+
+<h2 align="center"> - Tips - </h2>
 
 - Create Customer class that inherits from the Person class (Inheritance). Person has name and age (with getters). Customer has account (Aggregation of the class ContaCorrente or ContaPoupanca).
 
