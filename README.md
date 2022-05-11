@@ -1,15 +1,11 @@
-<h1 align="center"> Python Object-Oriented Programming Challenge </h1>
+<h1 align="center"> Desafio de Orientação a Objetos com Python </h1>
 
-<h5 align="center"> Exercise with Abstraction, Inheritance, Encapsulation and Polymorphism. Create a banking system (extremely simple) that has customers, accounts and a bank. The idea is that the customer has an account (savings or checking) and that can withdraw / deposit into that account. Checking accounts have an extra limit. Bank has customers and accounts. </h5>
+<h5 align="center"> Exercício com Abstração, Herança, Encapsulamento e Polimorfismo. Criar um sistema bancário (extremamente simples) que tenha clientes, contas e um banco. A ideia é que o cliente tenha uma conta (Poupança ou Corrente) e que possa sacar/depositar nessa conta. Contas Corrente tem um limite extra. Banco tem clientes e contas. </h5>
 
-<h5 align="center"> :construction: In Construction :construction: </h5>
+<h5 align="center"> :construction: Projeto em Construção :construction: </h5>
 
-<h2 align="center"> - Tips - </h2>
+<h2 align="center"> ✔️ Técnicas e tecnologias utilizadas ✔️ </h2>
 
-- Create Customer class that inherits from the Person class (Inheritance). Person has name and age (with getters). Customer has account (Aggregation of the class ContaCorrente or ContaPoupanca).
-
-- Create SavingAccount and CheckingAccount classes that inherit from Account. CheckingAccount must have an extra limit Accounts have branch, account number and balance Accounts must have a deposit method Account (superclass) must have the abstract withdrawal method (Abstraction and polymorphism - the subclasses that implement the withdraw method).
-
-- Create Bank class to AGGREGATE customer and account classes (Aggregation) Bank will be responsible for authenticating the customer and the accounts as follows: Bank has accounts and customers (Aggregation) * Check if the branch is from that bank * Check if the customer is from that bank * Check if the account belongs to that bank. 
-
-- It will only be possible to withdraw if you pass the bank authentication (described above).
+- ``Python 3.10``
+- ``Visual Studio Code``
+- ``Paradigma de Orientação a Objetos``
