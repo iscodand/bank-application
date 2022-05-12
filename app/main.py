@@ -16,13 +16,13 @@ from client import *
 bank = Bank()
 
 client = Client('Isco', 27)
-account = CheckingAccount('banco do brasil', '123-800', 500.0)
-client1 = client.insert_account(account)
+account = CheckingAccount('111', '123-800', 500.0)
+client.insert_account(account)
 
 bank.insert_client(client)
 bank.insert_account(account)
 
-if bank.authentication():
+if bank.authentication(client):
     print('Autenticado com sucesso!')
 else:
-    print('Erro na autenticação!')
+    print('Falha na autenticação!')

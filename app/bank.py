@@ -1,22 +1,23 @@
-from account import *
-from client import *
-
-
-class Bank(Account, Client):
+class Bank():
     def __init__(self):
-        self.client = None
-        self.account = None
-
-    def insert_client(self, client):
-        self.client = client
-        return self.client
+        self.agencys = ['111', '222', '333']
+        self.clients = list()
+        self.accounts = list()
 
     def insert_account(self, account):
-        self.account = account
-        return self.account
+        self.accounts.append(account)
 
-    def authentication(self):
-        if self.agency == 'Banco Do Brasil' and self.account_number.startwith('123'):
-            return f'Bem-vindo {self._name}!'
-        else:
-            return f'Conta não autenticada!'
+    def insert_client(self, client):
+        self.clients.append(client)
+
+    def authentication(self, client):
+        if client.account.agency not in self.agencys:
+            return None
+
+        if client not in self.clients:
+            return None
+        
+        if client.account not in self.accounts:
+            return None
+            
+        return True
