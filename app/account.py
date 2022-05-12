@@ -10,11 +10,13 @@ class Account():
         return value <= self.total_limit
 
     def deposit_money(self, value):
+        print(f'Você depositou R$ {value}')
         self._balance += value
 
     def withdraw_money(self, value):
         if (self.__withdraw_disponible(value)):
             self._balance -= value
+            print(f'Você sacou R$ {value}')
         else:
             print('Saldo/Limite Insuficiente!')
 
@@ -22,20 +24,21 @@ class Account():
         if (self.__withdraw_disponible(value)):
             self.withdraw_money(value)
             destiny_account.deposit_money(value)
+            print(f'Você transferiu R$ {value}')
         else:
             print('Transação não aceita!')
 
     @property
     def account_number(self):
-        return self._account_number
+        return f'Conta: {self._account_number}'
 
     @property
     def balance(self):
-        return self._balance
+        return f'Saldo: R$ {self._balance}'
 
     @property
     def limit(self):
-        return self._limit
+        return f'Limite: R$ {self._limit}'
 
 
 class SavingsAccount(Account):
