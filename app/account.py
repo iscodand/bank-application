@@ -1,6 +1,6 @@
 class Account():
     def __init__(self, agency, account_number, balance):
-        self.agency = agency
+        self.agency = agency.title()
         self._account_number = account_number
         self._balance = balance
         self._limit = 1000.0

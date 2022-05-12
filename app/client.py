@@ -19,3 +19,4 @@ class Client(Person):
 
     def insert_account(self, account):
         self.account = account
+        return self.account
